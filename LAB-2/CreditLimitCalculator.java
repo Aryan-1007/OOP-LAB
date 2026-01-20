@@ -1,5 +1,21 @@
 import java.util.Scanner;
 
+class Account {
+    int account;
+    double balance;
+    double charges;
+    double credits;
+    double creditlimit;
+
+    Account(int account, double balance, double charges, double credits, double creditlimit) {
+        this.account = account;
+        this.balance = balance;
+        this.charges = charges;
+        this.credits = credits;
+        this.creditlimit = creditlimit;
+    }
+}
+
 public class CreditLimitCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -19,11 +35,12 @@ public class CreditLimitCalculator {
         System.out.print("Enter credit limit: ");
         double creditLimit = sc.nextDouble();
 
-        double newBalance = balance + charges - credits;
+        Account ac = new Account(account, balance, charges, credits, creditLimit);
+        ac.balance = ac.balance + ac.charges - ac.credits;
 
-        System.out.println("New balance: " + newBalance);
+        System.out.println("New balance: " + ac.balance);
 
-        if (newBalance > creditLimit) {
+        if (ac.balance > ac.creditlimit) {
             System.out.println("Credit limit exceeded!");
         }
         sc.close();

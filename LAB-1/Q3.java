@@ -1,30 +1,66 @@
 import java.util.Scanner;
 
+abstract class Operations {
+    abstract void sum(int a, int b, int c);
+
+    abstract void average(int a, int b, int c);
+
+    abstract void product(int a, int b, int c);
+
+    abstract void smallest(int a, int b, int c);
+
+    abstract void largest(int a, int b, int c);
+}
+
+class Operation extends Operations {
+    public void sum(int a, int b, int c) {
+        int sum = a + b + c;
+        System.out.println("Sum: " + sum);
+    }
+
+    public void average(int a, int b, int c) {
+        double average = (a + b + c) / 3.0;
+        System.out.println("Average: " + average);
+    }
+
+    public void product(int a, int b, int c) {
+        int product = a * b * c;
+        System.out.println("Product: " + product);
+    }
+
+    public void smallest(int a, int b, int c) {
+        if (a <= b && a <= c) {
+            System.out.println(a + " is smallest");
+        } else if (b <= c && b <= a) {
+            System.out.println(b + " is smallest");
+        } else
+            System.out.println(a + " is smallest");
+    }
+
+    public void largest(int a, int b, int c) {
+        if (a >= b && a >= c) {
+            System.out.println(a + " is largest");
+        } else if (b >= c && b >= a) {
+            System.out.println(b + " is largest");
+        } else
+            System.out.println(c + " is largest");
+    }
+}
+
 public class Q3 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        Operations opt = new Operation();
+        System.out.println("Enter three numbers: ");
+        int b = sc.nextInt();
+        int a = sc.nextInt();
+        int c = sc.nextInt();
 
-        System.out.print("Enter first integer: ");
-        int a = input.nextInt();
-
-        System.out.print("Enter second integer: ");
-        int b = input.nextInt();
-
-        System.out.print("Enter third integer: ");
-        int c = input.nextInt();
-
-        int sum = a + b + c;
-        int product = a * b * c;
-        double average = sum / 3.0;
-
-        int largest = Math.max(a, Math.max(b, c));
-        int smallest = Math.min(a, Math.min(b, c));
-
-        System.out.println("Sum: " + sum);
-        System.out.println("Average: " + average);
-        System.out.println("Product: " + product);
-        System.out.println("Largest: " + largest);
-        System.out.println("Smallest: " + smallest);
-        input.close();
+        opt.sum(a, b, c);
+        opt.average(a, b, c);
+        opt.product(a, b, c);
+        opt.smallest(a, b, c);
+        opt.largest(a, b, c);
+        sc.close();
     }
 }
