@@ -1,4 +1,4 @@
-package LAB_4.q2;
+package LAB_4;
 
 public class PasswordCheck {
 

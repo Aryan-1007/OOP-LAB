@@ -1,4 +1,4 @@
-package LAB_4.q5;
+package LAB_4;
 
 public class PatternInRange {
 

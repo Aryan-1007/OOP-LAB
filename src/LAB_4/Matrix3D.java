@@ -1,4 +1,4 @@
-package LAB_4.q1;
+package LAB_4;
 
 public class Matrix3D {
     static int X = 3, Y = 3, Z = 3;

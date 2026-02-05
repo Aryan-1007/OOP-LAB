@@ -1,4 +1,4 @@
-package LAB_4.q6;
+package LAB_4;
 
 public interface Function {
     int evaluate(int x);

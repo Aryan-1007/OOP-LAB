@@ -29,6 +29,14 @@ class Invoice {
         return pricePerItem;
     }
 
+    public String getPartNumber() {
+        return partNumber;
+    }
+
+    public String getPartDescription() {
+        return partDescription;
+    }
+
     public double getInvoiceAmount() {
         return quantity * pricePerItem;
     }
@@ -37,6 +45,11 @@ class Invoice {
 public class InvoiceTest {
     public static void main(String[] args) {
         Invoice invoice = new Invoice("P101", "Mouse", 2, 500.0);
+
+        System.out.println("Part Number: " + invoice.getPartNumber());
+        System.out.println("Part Description: " + invoice.getPartDescription());
+        System.out.println("Quantity: " + invoice.getQuantity());
+        System.out.println("Price per Item: " + invoice.getPricePerItem());
         System.out.println("Invoice Amount: " + invoice.getInvoiceAmount());
     }
 }

@@ -1,4 +1,4 @@
-package LAB_4.q4;
+package LAB_4;
 
 import java.util.HashSet;
 
