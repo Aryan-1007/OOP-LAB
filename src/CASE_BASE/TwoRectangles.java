@@ -1,3 +1,5 @@
+package CASE_BASE;
+
 import java.util.Scanner;
 
 public class TwoRectangles {

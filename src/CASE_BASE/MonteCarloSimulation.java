@@ -1,3 +1,5 @@
+package CASE_BASE;
+
 public class MonteCarloSimulation {
     public static void main(String[] args) {
 
