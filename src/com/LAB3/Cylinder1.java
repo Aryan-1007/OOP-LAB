@@ -1,9 +1,9 @@
-package com.LAB_3.figPackage;
+package com.LAB3;
 
-public class Cylinder extends Figure {
+public class Cylinder1 extends Figure1 {
     double h;
 
-    public Cylinder(double r, double h) {
+    public Cylinder1(double r, double h) {
         this.r = r;
         this.h = h;
     }

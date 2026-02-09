@@ -1,9 +1,9 @@
-package com.LAB_3.figPackage;
+package com.LAB3;
 
-public class Cone extends Figure {
+public class Cone1 extends Figure1 {
     double h;
 
-    public Cone(double r, double h) {
+    public Cone1(double r, double h) {
         this.r = r;
         this.h = h;
     }

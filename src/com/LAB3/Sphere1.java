@@ -1,8 +1,7 @@
-package com.LAB_3.figPackage;
+package com.LAB3;
 
-public class Sphere extends Figure {
-
-    public Sphere(double r) {
+public class Sphere1 extends Figure1 {
+    public Sphere1(double r) {
         this.r = r;
     }
 

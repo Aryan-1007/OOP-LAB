@@ -1,6 +1,6 @@
-package com.LAB_3.figPackage;
+package com.LAB3;
 
-public abstract class Figure {
+abstract class Figure1 {
     protected double r, a, v;
     protected double pi = 3.142;
 

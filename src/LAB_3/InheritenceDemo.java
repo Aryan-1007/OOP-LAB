@@ -1,6 +1,6 @@
 package LAB_3;
 
-class Figure {
+abstract class Figure1 {
     double r, v;
 
     public void dispArea() {
@@ -9,8 +9,7 @@ class Figure {
     public void dispVolume() {
     }
 }
-
-class Cone extends Figure {
+class Cone extends Figure1 {
 
     public Cone(double r, double v) {
         this.r = r;
