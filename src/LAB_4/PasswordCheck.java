@@ -1,5 +1,7 @@
 package LAB_4;
 
+import java.util.Scanner;
+
 public class PasswordCheck {
 
     public static boolean isValid(String pwd) {
@@ -35,7 +37,10 @@ public class PasswordCheck {
     }
 
     public static void main(String[] args) {
-        System.out.println(isValid("abc11sec"));
-        System.out.println(isValid("a123123"));
+        String s;
+        System.out.println("Enter Password: ");
+        Scanner sc = new Scanner(System.in);
+        s = sc.nextLine();
+        System.out.println(isValid(s));
     }
 }

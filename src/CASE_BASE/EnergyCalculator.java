@@ -1,6 +1,7 @@
 package CASE_BASE;
 
 import java.util.Scanner;
+import static java.lang.Math.abs;
 
 public class EnergyCalculator {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class EnergyCalculator {
         System.out.print("Enter the final temperature: ");
         double finalTemp = input.nextDouble();
 
-        double q = m * (finalTemp - initialTemp) * 4184;
+        double q = abs(m) * (finalTemp - initialTemp) * 4184;
 
         System.out.println("The energy needed is " + q);
         input.close();

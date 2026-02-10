@@ -2,6 +2,8 @@ package CASE_BASE;
 
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class BMICalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -13,8 +15,8 @@ public class BMICalculator {
         double heightInches = input.nextDouble();
 
         // Conversions
-        double weightKg = weightPounds * 0.45359237;
-        double heightMeters = heightInches * 0.0254;
+        double weightKg = abs(weightPounds) * 0.45359237;
+        double heightMeters =abs( heightInches) * 0.0254;
 
         double bmi = weightKg / (heightMeters * heightMeters);
 

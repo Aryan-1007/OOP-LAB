@@ -1,6 +1,7 @@
 package LAB_4;
 
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class PerfectString {
 
@@ -16,7 +17,10 @@ public class PerfectString {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPerfect("abshdkqwertyuioplmnvczx"));
-        System.out.println(isPerfect("hello"));
+        String s;
+        System.out.println("Enter the string: ");
+        Scanner input = new Scanner(System.in);
+        s = input.nextLine();
+        System.out.println(isPerfect(s)?"It is perfect string!":"It is not perfect string!");
     }
 }

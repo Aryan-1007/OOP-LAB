@@ -1,5 +1,7 @@
 package LAB_4;
 
+import java.util.Scanner;
+
 public class Client {
 
     public static int[] processArray(int[] arr) {
@@ -13,7 +15,13 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 10, 20, 30 };
+        System.out.println("Enter the number of elements: ");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] arr= new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++)
+            arr[i] = input.nextInt();
         int[] res = processArray(arr);
 
         for (int i : res)
