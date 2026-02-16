@@ -1,4 +1,7 @@
 package LAB_5;
+
+import java.util.Scanner;
+
 class Student {
     String name;
 
@@ -16,7 +19,16 @@ class Student {
 public class Q6 {
     public static void main(String[] args) {
         Student s = new Student();
-        System.out.println("Name: " + s.inputName("Rahul"));
-        System.out.println("Result: " + s.average(60, 55, 40));
+        String name;
+        int mark1, mark2, mark3;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Student Name: ");
+        name=input.nextLine();
+        System.out.println("Enter Student Mark: ");
+        mark1=input.nextInt();
+        mark2=input.nextInt();
+        mark3=input.nextInt();
+        System.out.println("Result: " + s.average(mark1, mark2, mark3));
+        input.close();
     }
 }

@@ -6,10 +6,12 @@ import java.util.Scanner;
 
 public class charFrequency {
     public static void main(String[] args) {
-        String str = "aabcdeaabcjlkjerwlaaabbsadfdsf";
+        Scanner input = new Scanner(System.in);
+        String str;
+        System.out.println("Enter the string: ");
+        str = input.nextLine();
         int n;
         System.out.println("Enter limit of characters: ");
-        Scanner input = new Scanner(System.in);
         n=input.nextInt();
         HashMap<Character, Integer> map = new HashMap<>();
 
