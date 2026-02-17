@@ -1,5 +1,9 @@
 package LAB_5;
 
+import java.util.Scanner;
+
+import static java.lang.Math.abs;
+
 class Fruit {
     String name;
     String type;
@@ -17,9 +21,24 @@ class Fruit {
 }
 public class Q4 {
     public static void main(String[] args) {
-        Fruit f1 = new Fruit("Apple", "Single", 120);
-        Fruit f2 = new Fruit("Grapes", "Bunch", 80);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter name of first fruit: ");
+        String name1 = sc.nextLine();
+
+        System.out.print("Enter type of first fruit: ");
+        String type1 = sc.nextLine();
+
+        System.out.print("Enter price of first fruit: ");
+        int price1 = sc.nextInt();
+        sc.nextLine();
+        price1=abs(price1);
+
+        Fruit f1 = new Fruit(name1, type1, price1);
+
+        System.out.println("\nFruit Details:");
         f1.displayFruit();
-        f2.displayFruit();
+
+        sc.close();
     }
 }
