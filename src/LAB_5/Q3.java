@@ -65,7 +65,6 @@ public class Q3 {
         int power = sc.nextInt();
 
         price=abs(price);
-
         power=abs(power);
 
         ElectricalProduct ep =
