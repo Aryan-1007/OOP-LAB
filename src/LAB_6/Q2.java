@@ -12,7 +12,7 @@ class TotalProfit
         this.attendees=attendees;
     }
     void profit()
-    {   prof=((double)attendees*(0.5+5.0))-20;
+    {   prof=((double)attendees*(5.0-0.5))-20;
         System.out.println("Total Profit earned by the theatre: $"+ prof );
     }
 }
@@ -23,5 +23,6 @@ public class Q2 {
         int attendees=input.nextInt();
         TotalProfit theatre=new TotalProfit(attendees);
         theatre.profit();
+        input.close();
     }
 }

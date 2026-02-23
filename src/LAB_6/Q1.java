@@ -2,13 +2,13 @@ package LAB_6;
 
 import java.util.Scanner;
 
-class Car {
+class CarDetails {
     String company;
-    Car(String name){
+    CarDetails(String name){
         this.company=name;
     }
 }
-class ModelDetails extends Car{
+class ModelDetails extends CarDetails{
     int ModelNo;
     String EngineType;
 
@@ -33,5 +33,6 @@ public class Q1 {
         System.out.println("Company: "+ md.company);
         System.out.println("Model Number: "+ md.ModelNo);
         System.out.println("Engine Type: "+ md.EngineType);
+        input.close();
     }
 }
