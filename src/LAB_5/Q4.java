@@ -23,13 +23,13 @@ public class Q4 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter name of first fruit: ");
+        System.out.print("Enter name of fruit: ");
         String name1 = sc.nextLine();
 
-        System.out.print("Enter type of first fruit: ");
+        System.out.print("Enter type of fruit: ");
         String type1 = sc.nextLine();
 
-        System.out.print("Enter price of first fruit: ");
+        System.out.print("Enter price of fruit: ");
         int price1 = sc.nextInt();
         sc.nextLine();
         price1=abs(price1);

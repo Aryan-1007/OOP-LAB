@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q2 {
     public static void main(String[] args) {
         String number;
-        boolean isHex = true;
+        boolean Hex = true;
         System.out.print("Enter a number: ");
         number = new Scanner(System.in).next();
         for (int i = 0; i < number.length(); i++) {
@@ -14,12 +14,12 @@ public class Q2 {
             if (!((ch >= '0' && ch <= '9') ||
                     (ch >= 'A' && ch <= 'F') ||
                     (ch >= 'a' && ch <= 'f'))) {
-                isHex = false;
+                Hex = false;
                 break;
             }
         }
 
-        if (isHex)
+        if (Hex)
             System.out.println("Hexadecimal Number");
         else
             System.out.println("Not a Hexadecimal Number");
