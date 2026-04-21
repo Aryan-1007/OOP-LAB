@@ -16,10 +16,14 @@ class Account {
 
     synchronized void withdraw(int amt) {
         while (balance <= 2000) {
-            try { wait(); } catch (Exception e) {}
+            try { wait(); } catch(Exception e){}
         }
-        balance -= amt;
-        System.out.println("Withdraw: " + amt + " Balance: " + balance);
+
+        if (balance > 500) {
+            balance -= amt;
+            System.out.println("Withdraw: " + amt + " Balance: " + balance);
+        }
+
         notifyAll();
     }
 }
